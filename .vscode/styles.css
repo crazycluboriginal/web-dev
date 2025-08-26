@@ -1,0 +1,170 @@
+ html, body { 
+    height: 100%; 
+    background-size: 100% /* This makes it so that the entire image is scaled to fit the whole page */;
+    margin: 0;
+}
+
+h1 {
+    text-align: center; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"
+}
+
+/* Nav Bar*/
+nav {
+    position: sticky;
+    top: 0;
+}
+
+nav > ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(41, 41, 41);
+    top: 0;
+}
+
+nav li {
+    float: left;
+    padding-top: 10px; padding-bottom: 10px;
+ }
+
+nav li a {
+    color: white;
+    width:100%;
+    height:100%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: rgba(0, 131, 9, 0.5);
+    border-radius: 10px;
+}
+
+/* Homepage */
+#gallery {
+    background-image: url(https://www.creativefabrica.com/wp-content/uploads/2020/06/04/Green-Triangle-Background-with-Opacity-Graphics-4278660-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about {
+    background-color: rgb(185, 219, 255);
+    padding: 5px;
+    margin-left: auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: auto;
+}
+
+/* Main Shop Page */
+#link-plushie, #korok-cup {
+        border:3px rgb(0, 0, 0) solid;
+        border-radius:15px;
+        padding: 10px;
+        float: right;
+        background-color: rgb(255, 183, 183);
+        color: rgba(33, 33, 33, 0.8);
+        font-family: "Comic Sans MS";
+        width: 800px;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+    
+#ganondorf-backpack {
+        border:3px rgb(0, 0, 0) solid;
+        border-radius:15px;
+        padding: 10px;
+        float: left;
+        background-color: rgb(147, 208, 255);
+        color: rgba(33, 33, 33, 0.8);
+        font-family: "Comic Sans MS";
+        width: 800px;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+#totk-journal {
+        border:3px rgb(0, 0, 0) solid;
+        border-radius:15px;
+        padding: 10px;
+        float: left;
+        color: rgba(33, 33, 33, 0.8);
+        font-family: "Comic Sans MS";
+        background-color: rgb(147, 208, 255);
+        font-size: clamp(8px, 5vw, 15px);
+        width: 800px;
+        height: 320px;
+        margin-bottom: 10px;
+
+    }
+.image {
+    float: left;
+    cursor: url(star-5pt-outline.svg) 12 12, auto;
+    margin-right:10px;
+    margin-bottom:10px
+}
+
+
+#totk-image {
+    float: left;
+    margin-right:20px;
+    padding-bottom:10px;
+    margin-bottom: 20px
+}
+button {
+    background-color:black;
+    font-family: fantasy;
+    font-size: 13px;
+    width: 110px; height: 40px;
+    color: white;
+    border: 3px yellow groove;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color:green;
+    cursor: pointer;
+    width: 15%; /*keep in mind, width and height are based on the container of the button's dimensions! */
+    height: 15%
+}
+button:active {
+    background-color: purple;
+}
+
+h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 0);
+}
+table, td, th, tr {
+    margin-top:30px;
+    border: 2px solid black;
+    border-collapse: collapse
+}
+.table {
+    clear: both;
+}
+
+
+/* Checkout Page*/
+.checkout-image {
+    max-width: 50%;
+    max-height: 50%; /* These 2 settings ensure that the items NEVER overflow the <div> even as the screen size changes */
+}
+
+.checkout-card {
+    float:left;
+    overflow: hidden;
+    width: 25%;
+    height: 25%;
+    background-color: rgb(180, 255, 180);
+    border: 2px black solid;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px;
+}
+
+footer {
+    clear:both
+}
